@@ -226,4 +226,98 @@ footer {
     display: block;
 }
 
-                                                    /* PORTFOLIO */
+                                                /* PORTFOLIO page*/
+.portfolio-main {
+    padding: 94px 215px;
+}
+                                                /* portfolio-menu */
+.portfolio-menu {
+    padding-bottom: 34px;   
+}
+ .portfolio-menu-list {
+    width: 611px;
+    height: 54px;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+.portfolio-menu-button {
+    height: 38px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border: none;
+    padding: 6px 22px;
+}
+.portfolio-menu-button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+                                                /* portfolio-list */
+.portfolio-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item {
+    display: block;
+    width: 370px;
+    height: 404px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 30px;
+}
+.portfolio-img {
+    width: 370px;
+    height: 294px;
+    display: block;
+}
+.portfolio-text-wrap {
+    padding: 20px 24px;
+    width: 370px;
+    height: 110px;
+    text-align: left;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0px 0px 4px 0px;
+}
+.portfolio-info {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
