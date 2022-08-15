@@ -3,14 +3,29 @@ body {
     font-style: normal;
     font-weight: 500;
     color: #212121;
+    width: 1600px;
 }
 ul {
     list-style: none;
     display: flex;
-    text-align: center
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 a {
     text-decoration: none;
+}
+                                                  /* header */
+.header {
+    display: flex;
+    padding: 0 215px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}    
+nav {
+    display: flex;
+    align-items: center;
 }
 .link-header {
     font-size: 14px;
@@ -20,9 +35,12 @@ a {
 }
 .link-header:hover {
     color: #2196F3;
-} 
-li {
-    margin-right: 72px;
+}
+.link-item {
+    display: block;
+}
+.list-item:not(:last-child) {
+    margin-right: 55px;
 }
 .logo-header {
     color:#000000;
@@ -31,14 +49,20 @@ li {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    margin-right: 93px;
 }
-.logo-footer {
-    color: #FFFFFF;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+.list-position {
+    padding: 0px;
+    margin: 0px;    
+}
+.address-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    weight: 307px;
+}
+.contact-header:first-child {
+    margin-right: 50px;
 }
 .logo-color {
     color: #2196F3;
@@ -52,15 +76,11 @@ li {
 .contact-header:hover {
     color: #2196F3;
 }
-.contact-footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.section1 {
+                                                /* section main */
+.section-main {
     background-color: #2F303A;
+    height: 600px;
+    padding: 200px 452px;
 }
 h1 {
     font-weight: 900;
@@ -69,9 +89,10 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF
+    color: #FFFFFF;
+    margin: 0px 0px 30px 0px;
 }
-button {
+.section-main-button {
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -83,23 +104,41 @@ button {
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: #ffffff;
+    width: 200px;
+    height: 50px;
 }
-.section-hide {
-    display: none;
+                                            /* section-technologies */
+.section-technologies {
+    padding: 94px 215px;
 }
-.section2-title {
+.section-technologies-list {
+    justify-content: space-between;
+}
+.section-technologies-item {
+    width: 270px;
+    height: 101px;
+    text-align: left;
+    vertical-align: top;
+}
+.section-technologies-title {
     font-weight: 700;
     font-size: 14px;    
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
 }
-.section2-text {
+.section-technologies-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    margin: 0px;
+}
+                                          /* section-ourjob */
+.section-ourjob {
+    padding: 0px 215px 94px 215px;
 }
 .section-title {
     font-weight: 700;
@@ -107,31 +146,47 @@ button {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0px 0px 50px 0px;
 }
-.section3-image {
+.section-ourjob-list {
+    justify-content: space-between;
+}
+.section-ourjob-item {
     width: 370px;
     height: 294px;
 }
-.section4-color {
-    background-color: #F5F4FA;
+.section-ourjob-image {
+    width: 370px;
+    height: 294px;
 }
-.section4-photo {
+                                     /* section-ourteam */
+.section-ourteam {
+    background-color: #F5F4FA;
+    padding: 94px 215px;
+}
+.section-ourteam-photo {
     width: 270px;
     height: 260px;
+    display: block; 
 }
-.photo-background {
+.section-ourteam-list {
+    justify-content: space-between;
+}
+.section-ourteam-item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; 
+    width: 270px;
+    height: 368px;
 }
-.section4-name {
+.section-ourteam-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.section4-job {
+.section-ourteam-job {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -139,8 +194,19 @@ button {
     letter-spacing: 0.03em;
     color: #757575;
 }
+                                         /* footer */
 footer {
     background-color: #2F303A;
+    padding: 60px 1154px 60px 215px;
+}
+.logo-footer {
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 20px 0px;
 }
 .address-footer {
     color: #FFFFFF;
@@ -148,4 +214,16 @@ footer {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
+    margin-top: 20px;
 }
+.contact-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+                                                    /* PORTFOLIO */
