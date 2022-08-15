@@ -22,6 +22,7 @@ a {
     height: 80px;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #ECECEC;
 }    
 nav {
     display: flex;
@@ -226,7 +227,7 @@ footer {
     display: block;
 }
 
-                                                /* PORTFOLIO page*/
+                                                    /* PORTFOLIO page*/
 .portfolio-main {
     padding: 94px 215px;
 }
