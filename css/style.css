@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-.header-list {
-    
-}
-=======
 body {
     font-family: 'Roboto';
     font-style: normal;
@@ -77,7 +72,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    weight: 307px;
+    width: 307px;
 }
 
 .contact-header:first-child {
@@ -102,12 +97,27 @@ nav {
                                                 /* section main */
 
 .section-main {
-   /* background-color: #2F303A; */
     height: 600px;
     padding: 200px 452px;
     background-size: cover;
-    background-image: url("../images/main.png");
+    background-image: url("../images/main.jpg");
 }
+
+.section-main::before {
+    content: '';
+    display: block;
+    height: 600px;
+    width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 40%,
+        rgba(0, 0, 0, 0.1)
+    );
+    background-position: left top;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+} 
 
 h1 {
     font-weight: 900;
@@ -140,6 +150,8 @@ h1 {
 
 .section-technologies {
     padding: 94px 215px;
+   /* width: 1170px; */
+    height: 439px;
 }
 
 .section-technologies-list {
@@ -151,6 +163,37 @@ h1 {
     height: 101px;
     text-align: left;
     vertical-align: top;
+}
+
+.section-technologies-item::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.section-technologies-item:nth-child(1)::before {
+    content: '';
+    background-image: url(../images/antenna\ 1.png);
+}
+
+.section-technologies-item:nth-child(2)::before {
+    content: '';
+    background-image: url(../images/Vector\ \(4\).png);
+}
+
+.section-technologies-item:nth-child(3)::before {
+    content: '';
+    background-image: url(../images/diagram\ 1.png);
+}
+
+.section-technologies-item:nth-child(4)::before {
+    content: '';
+    background-image: url(../images/Group\ \(2\).png);
 }
 
 .section-technologies-title {
@@ -386,4 +429,3 @@ footer {
 
 
 
->>>>>>> 789ef57be50a486e6921738dc92c5ad1c0957829
