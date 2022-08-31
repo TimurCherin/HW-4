@@ -1,404 +1,104 @@
-body {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    color: #212121;
-    width: 1600px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-                                                  /* header */
-
-.header {
-    display: flex;
-    padding: 0 215px;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ECECEC;
-}    
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.link-header {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-}
-
-.link-header:hover {
-    color: #2196F3;
-}
-
-.link-item {
-    display: block;
-}
-
-.list-item:not(:last-child) {
-    margin-right: 55px;
-}
-
-.logo-header {
-    color:#000000;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-}
-
-.list-position {
-    padding: 0px;
-    margin: 0px;    
-}
-
-.address-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    weight: 307px;
-}
-
-.contact-header:first-child {
-    margin-right: 50px;
-}
-
-.logo-color {
-    color: #2196F3;
-}
-
-.contact-header {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-}
-
-.contact-header:hover {
-    color: #2196F3;
-}
-
-                                                /* section main */
-
-.section-main {
-    height: 600px;
-    padding: 200px 452px;
-    background-size: cover;
-    background-image: url("../images/main.png");
-}
-
-.section-main::before {
-    content: '';
-    display: block;
-    height: 600px;
-    width: 1600px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4) 40%,
-        rgba(0, 0, 0, 0.1)
-    );
-    background-position: left top;
-    position: absolute;
-    left: 0px;
-    top: 80px;
-} 
-
-h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin: 0px 0px 30px 0px;
-}
-
-.section-main-button {
-    background-color: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    width: 200px;
-    height: 50px;
-}
-
-                                            /* section-technologies */
-
-.section-technologies {
-    padding: 94px 215px;
-    height: 439px;
-}
-
-.section-technologies-list {
-    justify-content: space-between;
-}
-
-.section-technologies-item {
-    width: 270px;
-    height: 101px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.section-technologies-item::before {
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.section-technologies-item:nth-child(1)::before {
-    content: '';
-    background-image: url(../images/antenna\ 1.png);
-}
-
-.section-technologies-item:nth-child(2)::before {
-    content: '';
-    background-image: url(../images/Vector\ \(4\).png);
-}
-
-.section-technologies-item:nth-child(3)::before {
-    content: '';
-    background-image: url(../images/diagram\ 1.png);
-}
-
-.section-technologies-item:nth-child(4)::before {
-    content: '';
-    background-image: url(../images/Group\ \(2\).png);
-}
-
-.section-technologies-title {
-    font-weight: 700;
-    font-size: 14px;    
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin: 0px 0px 10px 0px;
-}
-
-.section-technologies-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0px;
-
-}
-                                          /* section-ourjob */
-
-.section-ourjob {
-    padding: 0px 215px 94px 215px;
-}
-
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin: 0px 0px 50px 0px;
-}
-
-.section-ourjob-list {
-    justify-content: space-between;
-}
-
-.section-ourjob-item {
-    width: 370px;
-    height: 294px;
-}
-
-.section-ourjob-image {
-    width: 370px;
-    height: 294px;
-}
-
-                                     /* section-ourteam */
-
-.section-ourteam {
-    background-color: #F5F4FA;
-    padding: 94px 215px;
-}
-
-.section-ourteam-photo {
-    width: 270px;
-    height: 260px;
-    display: block; 
-}
-
-.section-ourteam-list {
-    justify-content: space-between;
-}
-
-.section-ourteam-item {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px; 
-    width: 270px;
-    height: 368px;
-}
-
-.section-ourteam-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.section-ourteam-job {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-                                         /* footer */
-
-footer {
-    background-color: #2F303A;
-    padding: 60px 1154px 60px 215px;
-}
-
-.logo-footer {
-    color: #FFFFFF;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    margin: 0px 0px 20px 0px;
-}
-
-.address-footer {
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-bottom: 9px;
-    margin-top: 20px;
-}
-
-.contact-footer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
-}
-
-                                                    /* PORTFOLIO page*/
-
-.portfolio-main {
-    padding: 94px 215px;
-}
-
-                                                /* portfolio-menu */
-
-.portfolio-menu {
-    padding-bottom: 34px;   
-}
-
- .portfolio-menu-list {
-    width: 611px;
-    height: 54px;
-    margin: 0px auto;
-    justify-content: space-between;
-}
-
-.portfolio-menu-button {
-    height: 38px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    border: none;
-    padding: 6px 22px;
-}
-
-.portfolio-menu-button:hover {
-    background-color: #2196F3;
-    color: #FFFFFF;
-}
-
-                                                /* portfolio-list */
-
-.portfolio-list {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.portfolio-item {
-    display: block;
-    width: 370px;
-    height: 404px;
-    border: 1px solid #eeeeee;
-    margin-bottom: 30px;
-}
-
-.portfolio-img {
-    width: 370px;
-    height: 294px;
-    display: block;
-}
-
-.portfolio-text-wrap {
-    padding: 20px 24px;
-    width: 370px;
-    height: 110px;
-    text-align: left;
-}
-
-.portfolio-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    margin: 0px 0px 4px 0px;
-}
-
-.portfolio-info {
-    margin: 0px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+                                                <!-- header -->
+    <header class="header">
+        <nav>
+            <a href="/" class="logo-header"><span class="logo-color">Web</span>Studio</a>
+            <ul class="list-position">
+                <li class="list-item"><a href="../studia" class="link-header">Студія</a></li>
+                <li class="list-item"><a href="../portfolio.html" class="link-header">Портфоліо</a></li>
+                <li class="list-item"><a href="#contact" class="link-header">Контакти</a></li>
+            </ul>
+        </nav>
+        <address class="address-header">
+                <a href="mailto:info@devstudio.com" class="contact-header">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="contact-header">+38 096 111 11 11</a>
+        </address>
+    </header>
+    <main>
+                                                    <!-- section-main -->
+        <section class="section-main">
+            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button type="button" class="section-main-button">Замовити послугу</button>
+        </section>
+                                                    <!-- section-technologies -->
+        <section class="section-technologies">
+            <h2 hidden>Наші переваги</h2>
+            <ul class="section-technologies-list">
+                <li class="section-technologies-item">
+                    <h3 class="section-technologies-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="section-technologies-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                </li>
+                <li class="section-technologies-item">
+                    <h3 class="section-technologies-title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="section-technologies-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                </li>
+                <li class="section-technologies-item">
+                    <h3 class="section-technologies-title">ПЛАНУВАННЯ</h3>
+                    <p class="section-technologies-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                </li>
+                <li class="section-technologies-item">
+                    <h3 class="section-technologies-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="section-technologies-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                </li>
+            </ul>
+        </section>
+                                                    <!-- section-ourjob -->
+        <section class="section-ourjob">
+            <h2 class="section-title">Чим ми займаємося</h2>
+            <ul class="section-ourjob-list">
+                <li class="section-ourjob-item"><img src="./images/img1.jpg" alt="Фотографія з роботи" class="section-ourjob-image"></li>
+                <li class="section-ourjob-item"><img src="./images/img2.jpg" alt="Фотографія з роботи" class="section-ourjob-image"></li>
+                <li class="section-ourjob-item"><img src="./images/img3.jpg" alt="Фотографія з роботи" class="ssection-ourjob-image"></li>
+            </ul>
+        </section>
+                                                    <!-- section-ourteam -->
+        <section class="section-ourteam">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="section-ourteam-list">
+                <li class="section-ourteam-item">
+                    <img src="./images/Ihor.jpg" alt="Ігор Дем’яненко" class="section-ourteam-photo">
+                    <h3 class="section-ourteam-name">Ігор Дем’яненко</h3>
+                    <p class="section-ourteam-job">Product Designer</p>
+                </li>
+                <li class="section-ourteam-item">
+                    <img src="./images/Olga.jpg" alt="Ольга Репіна" class="section-ourteam-photo">
+                    <h3 class="section-ourteam-name">Ольга Репіна</h3>
+                    <p class="section-ourteam-job">Frontend Developer</p>
+                </li>
+                <li class="section-ourteam-item">
+                    <img src="./images/Mikola.jpg" alt="Микола Тарасов" class="section-ourteam-photo">
+                    <h3 class="section-ourteam-name">Микола Тарасов</h3>
+                    <p class="section-ourteam-job">Marketing</p>
+                </li>
+                <li class="section-ourteam-item">
+                    <img src="./images/Mihaylo.jpg" alt="Михайло Єрмаков" class="section-ourteam-photo">
+                    <h3 class="section-ourteam-name">Михайло Єрмаков</h3>
+                    <p class="section-ourteam-job">UI Designer</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+                                                <!-- footer -->
+    <footer>
+        <a href="/" class="logo-footer"><span class="logo-color">Web</span>Studio</a>
+        <address class="address-footer">
+            м. Київ, пр-т Лесі Українки, 26 
+        </address>
+        <address>
+            <a href="mailto:info@example.com" class="contact-footer" id="contact">info@example.com</a>
+            <a href="tel:+380991111111" class="contact-footer">+38 099 111 11 11</a>
+        </address>
+    </footer>
+</body>
+</html>
