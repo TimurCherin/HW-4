@@ -72,7 +72,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 307px;
+    weight: 307px;
 }
 
 .contact-header:first-child {
@@ -100,7 +100,7 @@ nav {
     height: 600px;
     padding: 200px 452px;
     background-size: cover;
-    background-image: url("../images/main.jpg");
+    background-image: url("../images/main.png");
 }
 
 .section-main::before {
@@ -150,7 +150,6 @@ h1 {
 
 .section-technologies {
     padding: 94px 215px;
-   /* width: 1170px; */
     height: 439px;
 }
 
@@ -402,30 +401,4 @@ footer {
     letter-spacing: 0.03em;
     color: #757575;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
