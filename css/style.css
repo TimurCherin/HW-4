@@ -85,6 +85,7 @@ nav {
 
 .contact-header {
     font-size: 14px;
+    font-style: normal;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
@@ -94,30 +95,21 @@ nav {
     color: #2196F3;
 }
 
-                                                /* section main */
+                                                /* main-section */
 
-.section-main {
+.main-section {
     height: 600px;
     padding: 200px 452px;
     background-size: cover;
-    background-image: url("../images/main.jpg");
-}
-
-.section-main::before {
-    content: '';
-    display: block;
-    height: 600px;
-    width: 1600px;
     background-image: linear-gradient(
         to right,
-        rgba(47, 48, 58, 0.4) 40%,
-        rgba(0, 0, 0, 0.1)
-    );
-    background-position: left top;
-    position: absolute;
-    left: 0px;
-    top: 80px;
-} 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url("../images/main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 h1 {
     font-weight: 900;
@@ -130,7 +122,7 @@ h1 {
     margin: 0px 0px 30px 0px;
 }
 
-.section-main-button {
+.main-section-button {
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -146,25 +138,25 @@ h1 {
     height: 50px;
 }
 
-                                            /* section-technologies */
+                                            /* technologies-section */
 
-.section-technologies {
+.technologies-section {
     padding: 94px 215px;
     height: 439px;
 }
 
-.section-technologies-list {
+.technologies-section-list {
     justify-content: space-between;
 }
 
-.section-technologies-item {
+.technologies-section-item {
     width: 270px;
     height: 101px;
     text-align: left;
     vertical-align: top;
 }
 
-.section-technologies-item::before {
+.technologies-section-item::before {
     content: '';
     display: block;
     width: 270px;
@@ -175,27 +167,27 @@ h1 {
     margin-bottom: 30px;
 }
 
-.section-technologies-item:nth-child(1)::before {
+.technologies-section-item:nth-child(1)::before {
     content: '';
     background-image: url(../images/antenna.png);
 }
 
-.section-technologies-item:nth-child(2)::before {
+.technologies-section-item:nth-child(2)::before {
     content: '';
     background-image: url(../images/vector.png);
 }
 
-.section-technologies-item:nth-child(3)::before {
+.technologies-section-item:nth-child(3)::before {
     content: '';
     background-image: url(../images/diagram.png);
 }
 
-.section-technologies-item:nth-child(4)::before {
+.technologies-section-item:nth-child(4)::before {
     content: '';
     background-image: url(../images/group.png);
 }
 
-.section-technologies-title {
+.technologies-section-title {
     font-weight: 700;
     font-size: 14px;    
     line-height: 1.14;
@@ -204,7 +196,7 @@ h1 {
     margin: 0px 0px 10px 0px;
 }
 
-.section-technologies-text {
+.technologies-section-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -213,9 +205,9 @@ h1 {
     margin: 0px;
 
 }
-                                          /* section-ourjob */
+                                          /* ourjob-section */
 
-.section-ourjob {
+.ourjob-section {
     padding: 0px 215px 94px 215px;
 }
 
@@ -228,38 +220,38 @@ h1 {
     margin: 0px 0px 50px 0px;
 }
 
-.section-ourjob-list {
+.ourjob-section-list {
     justify-content: space-between;
 }
 
-.section-ourjob-item {
+.ourjob-section-item {
     width: 370px;
     height: 294px;
 }
 
-.section-ourjob-image {
+.ourjob-section-image {
     width: 370px;
     height: 294px;
 }
 
-                                     /* section-ourteam */
+                                     /* ourteam-section */
 
-.section-ourteam {
+.ourteam-section {
     background-color: #F5F4FA;
     padding: 94px 215px;
 }
 
-.section-ourteam-photo {
+.ourteam-section-photo {
     width: 270px;
     height: 260px;
     display: block; 
 }
 
-.section-ourteam-list {
+.ourteam-section-list {
     justify-content: space-between;
 }
 
-.section-ourteam-item {
+.ourteam-section-item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; 
@@ -267,7 +259,7 @@ h1 {
     height: 368px;
 }
 
-.section-ourteam-name {
+.ourteam-section-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -275,7 +267,7 @@ h1 {
     letter-spacing: 0.03em;
 }
 
-.section-ourteam-job {
+.ourteam-section-job {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -314,6 +306,7 @@ footer {
 .contact-footer {
     font-weight: 400;
     font-size: 14px;
+    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
