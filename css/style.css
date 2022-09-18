@@ -23,11 +23,9 @@ a {
     height: 12px;
     margin-right: 10px;
     vertical-align: middle;
+    fill: currentColor;
 }
 
-.address-icon:hover {
-    fill: #2196F3;
-}
 
                                                   /* header */
 
