@@ -98,6 +98,8 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    display: flex;
+    align-items: center;
 }
 
 .contact-header:hover {
