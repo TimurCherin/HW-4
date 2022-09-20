@@ -6,6 +6,12 @@ body {
     width: 1600px;
 }
 
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -30,13 +36,17 @@ a {
                                                   /* header */
 
 .header {
-    display: flex;
-    padding: 0 215px;
+    padding: 0px;
     height: 80px;
-    align-items: center;
-    justify-content: space-between;
     border: 1px solid #ECECEC;
-}    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
 
 nav {
     display: flex;
@@ -110,7 +120,7 @@ nav {
 
 .main-section {
     height: 600px;
-    padding: 200px 452px;
+    padding: 200px 0px;
     background-size: cover;
     background-image: linear-gradient(
         to right,
@@ -120,6 +130,10 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.main-container {
+    padding: 0px 237px;
 }
 
 h1 {
@@ -135,7 +149,8 @@ h1 {
 
 .main-section-button {
     background-color: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);    
+    border-radius: 4px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -151,12 +166,13 @@ h1 {
                                             /* technologies-section */
 
 .technologies-section {
-    padding: 94px 215px;
+    padding: 94px 0px;
     height: 439px;
 }
 
 .technologies-section-list {
     justify-content: space-between;
+    height: 251px;
 }
 
 .technologies-section-item {
@@ -179,22 +195,22 @@ h1 {
 
 .technologies-section-item:nth-child(1)::before {
     content: '';
-    background-image: url(../images/antenna.png);
+    background-image: url(../images/antenna.svg);
 }
 
 .technologies-section-item:nth-child(2)::before {
     content: '';
-    background-image: url(../images/vector.png);
+    background-image: url(../images/clock.svg);
 }
 
 .technologies-section-item:nth-child(3)::before {
     content: '';
-    background-image: url(../images/diagram.png);
+    background-image: url(../images/diagram.svg);
 }
 
 .technologies-section-item:nth-child(4)::before {
     content: '';
-    background-image: url(../images/group.png);
+    background-image: url(../images/astronaut.svg);
 }
 
 .technologies-section-title {
@@ -218,7 +234,7 @@ h1 {
                                           /* ourjob-section */
 
 .ourjob-section {
-    padding: 0px 215px 94px 215px;
+    padding-bottom: 94px;
 }
 
 .section-title {
@@ -248,7 +264,7 @@ h1 {
 
 .ourteam-section {
     background-color: #F5F4FA;
-    padding: 94px 215px;
+    padding: 94px 0px;
 }
 
 .ourteam-section-photo {
@@ -305,14 +321,49 @@ h1 {
     fill: #FFFFFF;
     background-color: #2196F3;
 }
+                                        /* partner-section */
+.partner-section {
+    padding: 94px 0px;
+}
 
-                                         /* footer */
+.partner-item {
+    height: 90px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+
+.partner-item:hover {
+    color: #2196F3;
+    border-color: #2196F3;
+}
+
+
+.partner-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.partner-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+                                        /* footer */
 
 footer {
-    display: flex;
     background-color: #2F303A;
-    padding: 72px 878px 60px 215px;
+    padding: 72px 0px 60px 0px;
+}
+
+.footer-container {
+    display: flex;
     justify-content: space-between;
+    padding-right: 663px;
 }
 
 .icon-footer-wrap {
@@ -338,6 +389,7 @@ footer {
     letter-spacing: 0.03em;
     margin-bottom: 9px;
     margin-top: 20px;
+    font-style: normal;
 }
 
 .contact-footer {
