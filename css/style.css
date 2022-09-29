@@ -164,11 +164,22 @@ h1 {
     border: none;
 }
 
+.backdrop {
+    position: fixed;
+    left: 35%;
+    top: 15%;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+
+.is-hidden{
+    /* display: none; */
+}
+
 .modal-form-wrap {
     position: relative;
     width: 528px;
     height: 581px;
-    border: 1px solid #188CE8;
     padding: 40px;
 }
 
@@ -184,6 +195,7 @@ h1 {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .modal-close-button:hover .modal-close-icon {
@@ -207,28 +219,34 @@ h1 {
 .modal-form-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15px;
-    text-align: center;
+    line-height: 1.15;
+    text-align: center; 
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+    height: 23px;
+    margin-top: 0px;
 }
 
 .modal-form-label {
-    position: relative;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
 }
 
+.modal-form-span {
+    position: relative;
+    margin: 4px 0px 10px 0px;
+}
+
 .modal-form-input {
-    margin-top: 10px;
     height: 40px;
+    width: 100%;
     padding-left: 42px;
     border-radius: 4px;
-    margin-bottom: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    cursor: pointer;
 }
 
 .modal-form-input:hover {
@@ -238,9 +256,16 @@ h1 {
 .modal-form-checkbox {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    flex-direction: row;
+    margin-bottom: 30px;
+    
+}
+
+.modal-form-checkbox input {
+    margin-right: 7px;
 }
 
 .modal-form-checkbox-link {
@@ -251,7 +276,6 @@ h1 {
 label {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
 }
 
 .modal-button {
@@ -261,12 +285,13 @@ label {
 .modal-form-text-area {
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-bottom: 20px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     width: 448px;
     height: 120px;
+    cursor: pointer;
 }
 
 .modal-form-button {
@@ -284,6 +309,7 @@ label {
     width: 200px;
     height: 50px;
     border: none;
+    cursor: pointer;
 }
 
                                             /* technologies-section */
