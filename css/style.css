@@ -39,6 +39,9 @@ a {
     padding: 0px;
     height: 80px;
     border: 1px solid #ECECEC;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
 }
 
 .header-container {
@@ -162,25 +165,31 @@ h1 {
     width: 200px;
     height: 50px;
     border: none;
+    cursor: pointer;
 }
 
 .backdrop {
     position: fixed;
-    left: 35%;
-    top: 15%;
-    background-color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
+    width: 1600px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
 }
 
-.is-hidden{
-    /* display: none; */
+.is-hidden {
+    display: none;
 }
 
 .modal-form-wrap {
-    position: relative;
+    position: absolute;
     width: 528px;
     height: 581px;
     padding: 40px;
+    background-color: #FFFFFF;
+    left: 33%;
+    top: 12%;
 }
 
 .modal-close-button {

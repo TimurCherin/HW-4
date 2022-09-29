@@ -36,7 +36,7 @@
         <section class="main-section">
             <div class="container main-container">
                 <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button type="button" class="main-section-button">Замовити послугу</button>
+                <button type="button" class="main-section-button" data-open-modal>Замовити послугу</button>
             </div>
         </section>
         <div class="backdrop is-hidden" data-backdrop>
@@ -231,7 +231,7 @@
     </footer>
     <script>
         const refs = {
-          openModalBtn: document.querySelector("[main-section-button]"),
+          openModalBtn: document.querySelector("[data-open-modal]"),
           closeModalBtn: document.querySelector("[data-close-modal]"),
           backdrop: document.querySelector("[data-backdrop]"),
         };
