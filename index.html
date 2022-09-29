@@ -34,14 +34,48 @@
     <main>
                                                     <!-- main-section -->
         <section class="main-section">
-                <div class="container main-container">
+            <div class="container main-container">
                 <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button type="button" class="main-section-button">Замовити послугу</button>
-                </div>
-            </section>
+            </div>
+        </section>
+        <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal-form-wrap">
+                <button class="modal-close-button" data-close-modal>
+                    <svg class="modal-close-icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
+                </button>
+                <form class="modal-form">
+                    <p class="modal-form-title">Залиште свої дані, ми Вам зателефонуємо</p>
+                    <label class="modal-form-label">
+                        Ім'я
+                        <input class="modal-form-input" type="text" name="username" autofocus />
+                        <svg class="modal-position-icon"><use href="./images/symbol-defs.svg#modal-person"></use></svg>
+                    </label>
+                    <label class="modal-form-label">
+                        Телефон
+                        <input class="modal-form-input" type="tel" name="phone_number" />
+                        <svg class="modal-position-icon"><use href="./images/symbol-defs.svg#modal-phone"></use></svg>
+                    </label>
+                    <label class="modal-form-label">
+                    Пошта
+                    <input class="modal-form-input" type="email" name="email" />
+                    <svg class="modal-position-icon"><use href="./images/symbol-defs.svg#modal-email"></use></svg>
+                    </label>
+                    <label class="modal-form-label">
+                        Коментарі
+                        <textarea class="modal-form-text-area" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="modal-form-checkbox">
+                        <input type="checkbox" name="" checked />
+                        <span>Погоджуюсь з розсилкою i приймаю <a class="modal-form-checkbox-link" href="./">Умови договору</a></span>
+                    </label>
+                <button class="modal-form-button" type="submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
                                                         <!-- technologies-section -->
-            <section class="technologies-section">
-                <div class="container">
+        <section class="technologies-section">
+            <div class="container">
                 <h2 hidden>Наші переваги</h2>
                 <ul class="technologies-section-list">
                     <li class="technologies-section-item">
@@ -68,9 +102,24 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="ourjob-section-list">
-                    <li class="ourjob-section-item"><img src="./images/img1.jpg" alt="Фотографія з роботи" class="ourjob-section-image"></li>
-                    <li class="ourjob-section-item"><img src="./images/img2.jpg" alt="Фотографія з роботи" class="ourjob-section-image"></li>
-                    <li class="ourjob-section-item"><img src="./images/img3.jpg" alt="Фотографія з роботи" class="sourjob-section-image"></li>
+                    <li class="ourjob-section-item">
+                        <img src="./images/img1.jpg" alt="Фотографія з роботи" class="ourjob-section-image">
+                        <div class="ourjob-section-wrap">
+                            <p class="ourjob-section-title">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </li>
+                    <li class="ourjob-section-item">
+                        <img src="./images/img2.jpg" alt="Фотографія з роботи" class="ourjob-section-image">
+                        <div class="ourjob-section-wrap">
+                            <p class="ourjob-section-title">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </li>
+                    <li class="ourjob-section-item">
+                        <img src="./images/img3.jpg" alt="Фотографія з роботи" class="ourjob-section-image">
+                        <div class="ourjob-section-wrap">
+                            <p class="ourjob-section-title">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -174,5 +223,25 @@
             </div>
         </div>
     </footer>
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[main-section-button]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+  
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+  
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      </script>
 </body>
 </html>

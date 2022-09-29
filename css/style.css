@@ -164,6 +164,128 @@ h1 {
     border: none;
 }
 
+.modal-form-wrap {
+    position: relative;
+    width: 528px;
+    height: 581px;
+    border: 1px solid #188CE8;
+    padding: 40px;
+}
+
+.modal-close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.modal-close-button:hover .modal-close-icon {
+    fill: #2196F3;
+}
+
+.modal-close-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.modal-position-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 12px;
+    
+}
+
+.modal-form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.modal-form-label {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.modal-form-input {
+    margin-top: 10px;
+    height: 40px;
+    padding-left: 42px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-form-input:hover {
+    border-color: #2196F3;
+}
+
+.modal-form-checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-form-checkbox-link {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.modal-button {
+    position: absolute;
+}
+
+.modal-form-text-area {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 448px;
+    height: 120px;
+}
+
+.modal-form-button {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);    
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+
                                             /* technologies-section */
 
 .technologies-section {
@@ -254,11 +376,33 @@ h1 {
 .ourjob-section-item {
     width: 370px;
     height: 294px;
+    position: relative;
 }
 
 .ourjob-section-image {
     width: 370px;
     height: 294px;
+}
+
+.ourjob-section-wrap {
+    position: absolute;
+    bottom: 0px;
+    margin: 0px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+}
+
+.ourjob-section-title {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
                                      /* ourteam-section */
