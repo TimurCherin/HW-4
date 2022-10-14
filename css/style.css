@@ -209,8 +209,8 @@ h1 {
 }
 
 .is-hidden {
-    display: none;
-    transform: translate(-50%, -50%) scale(0);
+    display: block;
+    transform: scale(0);
 }
 
 .modal-form-wrap {
@@ -219,12 +219,9 @@ h1 {
     height: 581px;
     padding: 40px;
     background-color: #FFFFFF;
-    /* left: 33%;
-    top: 9%; */
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 5s cubic-bezier(0.215, 0.610, 0.355, 1) 5s;
 }
 
 .modal-close-button {
@@ -774,6 +771,7 @@ footer {
     height: 404px;
     border: 1px solid #eeeeee;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .portfolio-item-hover {
@@ -785,7 +783,10 @@ footer {
     Height: 294px;
     margin-top: 0px;
     padding: 63px 24px;
-    opacity: 0;
+    opacity: 1;
+    transform: translate(-100%);
+    transition-duration: 500ms;
+    transition-delay: 250ms;
 }
 
 .portfolio-item-hover-title {
@@ -797,8 +798,7 @@ footer {
 
 .portfolio-item:hover .portfolio-item-hover{
     opacity: 1;
-    transition-duration: 500ms;
-    transition-delay: 250ms;
+    transform: translate(0);
 }
 
 .portfolio-item:hover {
