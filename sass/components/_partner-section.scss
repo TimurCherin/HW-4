@@ -13,14 +13,14 @@
 }
 
 .partner-section__item:hover {
-    color: #2196F3;
-    border-color: #2196F3;
+    color: $main-color;
+    border-color: $main-color;
     transition-duration: 500ms;
     transition-delay: 250ms;
 }
 
 .partner-section__item:hover svg {
-    fill: #2196F3;
+    fill: $main-color;
     transition-duration: 500ms;
     transition-delay: 250ms;
 }

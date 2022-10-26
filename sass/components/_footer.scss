@@ -18,7 +18,7 @@ footer {
 }
 
 .footer-container__logo {
-    color: #FFFFFF;
+    color: $base-color;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -28,7 +28,7 @@ footer {
 }
 
 .footer-container__address {
-    color: #FFFFFF;
+    color: $base-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -54,13 +54,13 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $base-color;
 }
 
 .footer-container__icon {
     width: 44px;
     height: 44px;
-    fill: #FFFFFF;
+    fill: $base-color;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     padding: 12px;
@@ -72,8 +72,8 @@ footer {
 }
 
 .footer-container__icon:hover {
-    fill: #FFFFFF;
-    background-color: #2196F3;
+    fill: $base-color;
+    background-color: $main-color;
     transition-duration: 500ms;
     transition-delay: 250ms;
 }
@@ -85,7 +85,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $base-color;
     margin-bottom: 20px;
 }
 
@@ -109,7 +109,7 @@ footer {
     width: 200px;
     height: 50px;
     padding: 10px 28px 10px 29px;
-    background: #2196F3;
+    background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
@@ -119,12 +119,12 @@ footer {
     align-items: center;
     text-align: center; 
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $base-color;
 }
 
 .feedback-position__icon {
     width: 22px;
     height: 22px;
     margin-left: 10px;
-    fill: #FFFFFF;
+    fill: $base-color;
 }

@@ -39,7 +39,7 @@
 }
 
 .ourjob-section__title {
-    color: #FFFFFF;
+    color: $base-color;
     margin: 0px;
     font-weight: 700;
     font-size: 14px;
@@ -66,7 +66,7 @@
 }
 
 .ourteam-section__item {
-    background-color: #FFFFFF;
+    background-color: $base-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px; 
     width: 270px;
@@ -106,8 +106,8 @@
 }
 
 .ourteam-section__icon:hover {
-    fill: #FFFFFF;
-    background-color: #2196F3;
+    fill: $base-color;
+    background-color: $main-color;
     transition-duration: 500ms;
     transition-delay: 250ms;
 }

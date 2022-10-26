@@ -23,12 +23,12 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: $base-color;
     margin: 0px 0px 30px 0px;
 }
 
 .main-section__button {
-    background-color: #2196F3;
+    background-color: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);    
     border-radius: 4px;
     display: block;
@@ -38,7 +38,7 @@ h1 {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: $base-color;
     width: 200px;
     height: 50px;
     border: none;
@@ -67,7 +67,7 @@ h1 {
     width: 528px;
     height: 581px;
     padding: 40px;
-    background-color: #FFFFFF;
+    background-color: $base-color;
     left: 50%;
     top: 35%;
     transform: translate(-50%, -50%) scale(1);
@@ -84,12 +84,12 @@ h1 {
     align-items: center;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
+    background-color: $base-color;
     cursor: pointer;
 }
 
 .modal__close__button:hover .modal__close__icon {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .modal__close__icon {
@@ -140,15 +140,15 @@ h1 {
 }
 
 .modal-form__span:hover .modal-form__input {
-    border-color: #2196F3;
+    border-color: $main-color;
 }
 
 .modal-form__span:hover .modal-form__icon {
-    fill: #2196F3;
+    fill: $main-color;
 }
 
 .modal-form__text__area:hover {
-    border-color: #2196F3;
+    border-color: $main-color;
 }
 
 .modal-form__checkbox {
@@ -166,7 +166,7 @@ h1 {
 }
 
 .modal-form__checkbox__link {
-    color: #2196F3;
+    color: $main-color;
     text-decoration: underline;
 }
 
@@ -202,7 +202,7 @@ label {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: $base-color;
     width: 200px;
     height: 50px;
     border: none;

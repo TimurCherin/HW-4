@@ -28,8 +28,8 @@
 }
 
 .portfolio-menu__button:hover {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: $main-color;
+    color: $base-color;
     transition-duration: 500ms;
     transition-delay: 250ms;
 }
