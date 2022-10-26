@@ -1,0 +1,66 @@
+.technologies-section {
+    padding: 94px 0px;
+    height: 439px;
+}
+
+.technologies-section__list {
+    justify-content: space-between;
+    height: 251px;
+}
+
+.technologies-section__item {
+    width: 270px;
+    height: 101px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.technologies-section__item::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.technologies-section__item:nth-child(1)::before {
+    content: '';
+    background-image: url(../images/antenna_1.svg);
+}
+
+.technologies-section__item:nth-child(2)::before {
+    content: '';
+    background-image: url(../images/clock_1.svg);
+}
+
+.technologies-section__item:nth-child(3)::before {
+    content: '';
+    background-image: url(../images/diagram_1.svg);
+}
+
+.technologies-section__item:nth-child(4)::before {
+    content: '';
+    background-image: url(../images/astronaut_1.svg);
+}
+
+.technologies-section__title {
+    font-weight: 700;
+    font-size: 14px;    
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+.technologies-section__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0px;
+
+}

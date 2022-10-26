@@ -1,0 +1,40 @@
+.partner-section {
+    padding: 94px 0px;
+}
+
+.partner-section__item {
+    height: 90px;
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-section__item:hover {
+    color: #2196F3;
+    border-color: #2196F3;
+    transition-duration: 500ms;
+    transition-delay: 250ms;
+}
+
+.partner-section__item:hover svg {
+    fill: #2196F3;
+    transition-duration: 500ms;
+    transition-delay: 250ms;
+}
+
+.partner-section__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.partner-section__link {
+    color: #AFB1B8;
+}
+
+.partner-section__icon {
+    width: 106px;
+    height: 60px; 
+    fill: currentColor;
+}
