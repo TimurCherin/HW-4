@@ -1,59 +1,63 @@
 .ourteam-section {
     background-color: #F5F4FA;
     padding: 94px 0px;
+
+    &__photo {
+      width: 270px;
+      height: 260px;
+      display: block;
+    }
+    
+    &__list {
+      justify-content: space-between;
+    }
+    
+    &__item {
+      background-color: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      width: 270px;
+      height: 428px;
+    }
+    
+    &__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 30px;
+    }
+    
+    &__job {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #757575;
+    }
+    
+    &__icon-list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    &__icon {
+      width: 44px;
+      height: 44px;
+      fill: #AFB1B8;
+      padding: 12px;
+      border-radius: 50%;
+      overflow: visible;
+      transition-duration: 500ms;
+      transition-delay: 250ms;
+
+      &:hover {
+        fill: #FFFFFF;
+        background-color: #2196F3;
+      }
+    }
   }
   
-  .ourteam-section__photo {
-    width: 270px;
-    height: 260px;
-    display: block;
-  }
   
-  .ourteam-section__list {
-    justify-content: space-between;
-  }
-  
-  .ourteam-section__item {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    height: 428px;
-  }
-  
-  .ourteam-section__name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-  }
-  
-  .ourteam-section__job {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-  
-  .ourteam-section__icon-list {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .ourteam-section__icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    overflow: visible;
-  }
-  
-  .ourteam-section__icon:hover {
-    fill: #FFFFFF;
-    background-color: #2196F3;
-    transition-duration: 500ms;
-    transition-delay: 250ms;
-  }
