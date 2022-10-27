@@ -19,12 +19,16 @@ footer {
 
 .footer__logo {
     color: $base-color;
-    font-family: 'Raleway';
+    font-family: $second-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin: 0px 0px 20px 0px;
+}
+
+.footer__logo span {
+    color: $main-color;
 }
 
 .footer__address {
