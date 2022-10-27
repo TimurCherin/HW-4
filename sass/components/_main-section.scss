@@ -1,3 +1,7 @@
+.main-indent {
+    height: 80px;
+}
+
 .main-section {
     height: 600px;
     padding: 200px 0px;
@@ -62,7 +66,7 @@ h1 {
     transform: scale(0);
 }
 
-.modal-form-wrap {
+.modal-form__wrap {
     position: absolute;
     width: 528px;
     height: 581px;
