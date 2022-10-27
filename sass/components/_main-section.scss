@@ -73,7 +73,7 @@ h1 {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal__close__button {
+.modal-form__close-button {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -88,11 +88,11 @@ h1 {
     cursor: pointer;
 }
 
-.modal__close__button:hover .modal__close__icon {
+.modal-form__close-button:hover .modal-form__close-icon {
     fill: $main-color;
 }
 
-.modal__close__icon {
+.modal-form__close-icon {
     width: 18px;
     height: 18px;
 }
@@ -106,7 +106,7 @@ h1 {
     
 }
 
-.modal__form__title {
+.modal-form__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;

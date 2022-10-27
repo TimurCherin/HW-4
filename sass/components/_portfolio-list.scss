@@ -13,7 +13,7 @@
     overflow: hidden;
 }
 
-.portfolio-list__item__hover {
+.portfolio-list__item-hover {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -28,14 +28,14 @@
     transition-delay: 250ms;
 }
 
-.portfolio-list__item__hover__title {
+.portfolio-list__item-hover-title {
     color: $base-color;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.03em;
 }
 
-.portfolio-list__item:hover .portfolio-list__item__hover{
+.portfolio-list__item:hover .portfolio-list__item-hover{
     opacity: 1;
     transform: translate(0);
 }
@@ -52,7 +52,7 @@
     display: block;
 }
 
-.portfolio-list__text__wrap {
+.portfolio-list__text-wrap {
     padding: 20px 24px;
     width: 370px;
     height: 110px;

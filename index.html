@@ -7,26 +7,26 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
                                                 <!-- header -->
     <header class="header">
         <div class="container header-container">
             <nav>
-                <a href="./" class="header-container__logo"><span class="header-container__logo__color">Web</span>Studio</a> 
-                <ul class="list-position">
-                    <li class="header-container__list__item"><a href="./" class="header-container__link">Студія</a></li>
-                    <li class="header-container__list__item"><a href="./portfolio.html" class="header-container__link">Портфоліо</a></li>
-                    <li class="header-container__list__item"><a href="#contact" class="header-container__link">Контакти</a></li>
+                <a href="./" class="header__logo"><span class="header__logo-color">Web</span>Studio</a> 
+                <ul class="header__list">
+                    <li class="header__item"><a href="./" class="header__link">Студія</a></li>
+                    <li class="header__item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
+                    <li class="header__item"><a href="#contact" class="header__link">Контакти</a></li>
                 </ul>
             </nav>
-            <address class="header-container__address">
-                    <a href="mailto:info@devstudio.com" class="header-container__contact">
-                        <svg class="header-container__address__icon"><use href="./images/symbol-defs.svg#envelope"></use></svg>info@devstudio.com
+            <address class="header__address">
+                    <a href="mailto:info@devstudio.com" class="header__contact">
+                        <svg class="header__icon"><use href="./images/symbol-defs.svg#envelope"></use></svg>info@devstudio.com
                     </a>
-                    <a href="tel:+380961111111" class="header-container__contact">
-                        <svg class="header-container__address__icon"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
+                    <a href="tel:+380961111111" class="header__contact">
+                        <svg class="header__icon"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
                     </a>
             </address>
         </div>
@@ -41,10 +41,10 @@
         </section>
         <div class="backdrop is-hidden" data-backdrop>
             <div>
-                <button class="modal__close__button" data-close-modal>
-                    <svg class="modal__close__icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
+                <button class="modal-form__close-button" data-close-modal>
+                    <svg class="modal-form__close-icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
                 </button>
-                <p class="modal__form__title">Залиште свої дані, ми Вам зателефонуємо</p>
+                <p class="modal-form__title">Залиште свої дані, ми Вам зателефонуємо</p>
                 <form class="modal-form">
                     <label class="modal-form__label">
                         Ім'я
@@ -80,7 +80,7 @@
             </div>
         </div>
                                                         <!-- technologies-section -->
-        <section class="container technologies-section">
+        <section class="technologies-section">
             <div class="container">
                 <h2 hidden>Наші переваги</h2>
                 <ul class="technologies-section__list">
@@ -138,7 +138,7 @@
                         <img src="./images/Ihor.jpg" alt="Ігор Дем’яненко" class="ourteam-section__photo">
                         <h3 class="ourteam-section__name">Ігор Дем’яненко</h3>
                         <p class="ourteam-section__job">Product Designer</p>
-                        <div class="ourteam-section__icon__list">
+                        <div class="ourteam-section__icon-list">
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
@@ -149,7 +149,7 @@
                         <img src="./images/Olga.jpg" alt="Ольга Репіна" class="ourteam-section__photo">
                         <h3 class="ourteam-section__name">Ольга Репіна</h3>
                         <p class="ourteam-section__job">Frontend Developer</p>
-                        <div class="ourteam-section__icon__list">
+                        <div class="ourteam-section__icon-list">
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
@@ -160,7 +160,7 @@
                         <img src="./images/Mikola.jpg" alt="Микола Тарасов" class="ourteam-section__photo">
                         <h3 class="ourteam-section__name">Микола Тарасов</h3>
                         <p class="ourteam-section__job">Marketing</p>
-                        <div class="ourteam-section__icon__list">
+                        <div class="ourteam-section__icon-list">
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
@@ -171,7 +171,7 @@
                         <img src="./images/Mihaylo.jpg" alt="Михайло Єрмаков" class="ourteam-section__photo">
                         <h3 class="ourteam-section__name">Михайло Єрмаков</h3>
                         <p class="ourteam-section__job">UI Designer</p>
-                        <div class="ourteam-section__icon__list">
+                        <div class="ourteam-section__icon-list">
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
                             <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
@@ -182,7 +182,7 @@
             </div>
         </section>
                                                 <!-- partner-section -->
-        <section class="container partner-section">
+        <section class="partner-section">
             <div class="container">
                 <h2 class="section-title">Постійні клієнти</h2>
                 <ul>
@@ -211,21 +211,21 @@
     <footer>
         <div class="container footer-container">
             <div>
-                <a href="/" class="footer-container__logo"><span>Web</span>Studio</a>
-                <address class="footer-container__address">
+                <a href="/" class="footer__logo"><span>Web</span>Studio</a>
+                <address class="footer__address">
                     м. Київ, пр-т Лесі Українки, 26 
                 </address>
                 <address>
-                    <a href="mailto:info@example.com" class="footer-container__contact" id="contact">info@example.com</a>
-                    <a href="tel:+380991111111" class="footer-container__contact">+38 099 111 11 11</a>
+                    <a href="mailto:info@example.com" class="footer__contact" id="contact">info@example.com</a>
+                    <a href="tel:+380991111111" class="footer__contact">+38 099 111 11 11</a>
                 </address>
             </div>
-            <div class="footer-container__icon__wrap">
-                <h4 class="footer-container__join">ПРИЄДНУЙТЕСЬ</h4>
-                <svg class="footer-container__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
-                <svg class="footer-container__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
-                <svg class="footer-container__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
-                <svg class="footer-container__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+            <div class="footer__icon-wrap">
+                <h4 class="footer__join">ПРИЄДНУЙТЕСЬ</h4>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
             </div>       
             <div>
                 <form>
@@ -234,7 +234,7 @@
                         <input placeholder="E-mail" class="feedback-form__input" type="email" />
                         <button class="feedback-form__button" type="submit">
                             Підписатися
-                            <svg class="feedback-position__icon"><use href="./images/symbol-defs.svg#send"></use></svg>
+                            <svg class="feedback-form__icon"><use href="./images/symbol-defs.svg#send"></use></svg>
                         </button>
                     </div>
                 </form>

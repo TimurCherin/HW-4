@@ -8,16 +8,16 @@ footer {
     justify-content: space-between;
 }
 
-.icon-footer-wrap {
+.footer__icon-wrap {
     width: 218px;
     height: 80px;
 }
 
-.icon-footer-wrap h4 {
+.footer__icon-wrap h4 {
     margin: 0px 0px 20px 0px;
 }
 
-.footer-container__logo {
+.footer__logo {
     color: $base-color;
     font-family: 'Raleway';
     font-weight: 700;
@@ -27,7 +27,7 @@ footer {
     margin: 0px 0px 20px 0px;
 }
 
-.footer-container__address {
+.footer__address {
     color: $base-color;
     font-weight: 400;
     font-size: 14px;
@@ -38,7 +38,7 @@ footer {
     font-style: normal;
 }
 
-.footer-container__contact {
+.footer__contact {
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -48,7 +48,7 @@ footer {
     display: block;
 }
 
-.footer-container__join {
+.footer__join {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -57,7 +57,7 @@ footer {
     color: $base-color;
 }
 
-.footer-container__icon {
+.footer__icon {
     width: 44px;
     height: 44px;
     fill: $base-color;
@@ -67,11 +67,11 @@ footer {
     overflow: visible;
 }
 
-.footer-container__icon:not(:last-child) {
+.footer__icon:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-container__icon:hover {
+.footer__icon:hover {
     fill: $base-color;
     background-color: $main-color;
     transition-duration: 500ms;
@@ -122,7 +122,7 @@ footer {
     color: $base-color;
 }
 
-.feedback-position__icon {
+.feedback-form__icon {
     width: 22px;
     height: 22px;
     margin-left: 10px;
