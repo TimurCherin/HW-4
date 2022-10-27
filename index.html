@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
                                                 <!-- header -->
@@ -32,7 +32,8 @@
         </div>
     </header>
                                                     <!-- main-section -->
-    <main>                                                
+    <main>
+        <div class="main-indent"></div>                                                
         <section class="main-section">
             <div class="container main-section__container">
                 <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -40,12 +41,11 @@
             </div>
         </section>
         <div class="backdrop is-hidden" data-backdrop>
-            <div>
-                <button class="modal-form__close-button" data-close-modal>
-                    <svg class="modal-form__close-icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
-                </button>
-                <p class="modal-form__title">Залиште свої дані, ми Вам зателефонуємо</p>
                 <form class="modal-form">
+                    <button class="modal-form__close-button" data-close-modal>
+                        <svg class="modal-form__close-icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
+                    </button>
+                    <p class="modal-form__title">Залиште свої дані, ми Вам зателефонуємо</p>
                     <label class="modal-form__label">
                         Ім'я
                         <span class="modal-form__span">
@@ -77,7 +77,6 @@
                     </label>
                 <button class="modal-form__button" type="submit">Надіслати</button>
                 </form>
-            </div>
         </div>
                                                         <!-- technologies-section -->
         <section class="technologies-section">
@@ -208,7 +207,7 @@
             </div>
         </section> 
                                                 <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="container footer-container">
             <div>
                 <a href="/" class="footer__logo"><span>Web</span>Studio</a>
@@ -228,7 +227,7 @@
                 <svg class="footer__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
             </div>       
             <div>
-                <form>
+                <form class="feedback-form">
                     <span class="feedback-form__title">Підпишись на розсилку</span>
                     <div class="feedback-form__wrap">
                         <input placeholder="E-mail" class="feedback-form__input" type="email" />
