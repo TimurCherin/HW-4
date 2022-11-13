@@ -1,15 +1,44 @@
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 .footer {
-    background-color: #2F303A;
-    padding: 72px 0px 60px 0px;
+
+    @media screen and (min-width: 480px) {
+        background-color: #2F303A;
+        width: 480px;
+        height: 603px;
+        padding: 60px 0px;
+        display: flex;
+    }
+    
+    @media screen and (min-width: 768px) {
+            width: 768px;
+            height: 463px;
+            padding: 65px 89px 60px 89px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        padding: 72px 0px 60px 0px;
+        width: 1600px;
+        height: 252px;
+    }
 
 &__icon-wrap {
-    width: 218px;
-    height: 80px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 80px;
+        margin: 60px 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin: 10px 0px 0px 165px;
+        width: 218px;
+        height: 80px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 218px;
+        height: 80px;
+        margin: 0px;
+    }
 
     & h4 {
         margin: 0px 0px 20px 0px;
@@ -25,7 +54,21 @@
     letter-spacing: 0.03em;
     margin: 0px 0px 20px 0px;
 
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        color: $base-color;
+        font-family: $second-font;
+    }
+
     & span {
+        font-family: $second-font;
         color: $main-color;
     }
 }
@@ -39,6 +82,18 @@
     margin-bottom: 9px;
     margin-top: 20px;
     font-style: normal;
+
+    @media screen and (min-width: 480px) {
+        
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
 }
 
 &__contact {
@@ -83,6 +138,22 @@
 }
 
 .feedback-form {
+    
+    @media screen and (min-width: 480px) {
+        height: 156px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        height: 154px;
+        display: inline;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 570px;
+        height: 80px;
+        display: block;
+    }
 
     &__title {
         display: block;
@@ -96,8 +167,19 @@
     }
     
     &__wrap {
-        display: flex;
-        height: 50px;
+
+        @media screen and (min-width: 480px) {
+            display: block;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            display: flex;
+            height: 50px;
+        }
     }
     
     &__input {
@@ -127,6 +209,20 @@
         text-align: center; 
         letter-spacing: 0.06em;
         color: $base-color;
+
+        @media screen and (min-width: 480px) {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            margin-top: 0px;
+        }
     }
     
     &__icon {
@@ -134,5 +230,34 @@
         height: 22px;
         margin-left: 10px;
         fill: $base-color;
+    }
+}
+.footer-container {
+    
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        flex-wrap: nowrap;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    & div:nth-child(3) {
+
+        @media screen and (min-width: 768px) {
+            margin-left: 76px;
+            margin-top: 54px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            margin: 0px;
+        }
     }
 }
